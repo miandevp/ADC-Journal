@@ -1,0 +1,49 @@
+# README - Recorrido del proyecto
+
+Este repositorio documenta mi aprendizaje construyendo un procesador RISC-V desde cero en Verilog.
+
+Cada nivel contiene sus propias explicaciones y detalles. Aquí solo se muestra el recorrido general.
+
+---
+
+## Índice del recorrido
+
+- **Niveles 1 - 12**
+  - Fundamentos de Verilog y lógica digital.
+
+- **Nivel 13**
+  - Construcción de una ALU completa.
+
+- **Nivel 14**
+  - Primer módulo estructural: MiniDatapath.
+  - Conexión entre AluDecoder y ALU.
+
+- **Próximos niveles**
+  - Controller.
+  - Datapath completo.
+  - Procesador monociclo.
+  - Pipeline.
+  - Hazards y técnicas de resolución.
+  - Procesador RISC-V pipeline completo.
+
+---
+
+## Objetivo final
+
+Pasar de:
+
+```text
+a + b
+```
+
+a:
+
+```text
+Programa RISC-V
+        ↓
+Procesador Pipeline
+        ↓
+Resultado correcto
+```
+
+construyendo y entendiendo cada bloque del camino.

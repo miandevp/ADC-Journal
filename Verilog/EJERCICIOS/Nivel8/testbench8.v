@@ -1,0 +1,43 @@
+`timescale 1ns / 1ps
+
+module testbench_Alu;
+    reg [31:0] a;
+    reg [31:0] b;
+    reg [2:0]sel;
+    wire [31:0] y;
+    
+    Alu dut (
+        .a(a),
+        .b(b),
+        .sel(sel),
+        .y(y),
+        .zero(zero)
+    );
+
+    initial begin
+     a=5;
+     b=6;
+     sel=4;
+     
+     #10
+     
+     a=6;
+     b=4;
+     sel=4;
+     
+     #10
+     
+     a=6;
+     b=6;
+     sel=4;
+     #10
+     
+          
+     a=2147483647;
+     b=-1;
+     sel=4;
+     #10
+     
+     $finish;
+    end
+endmodule
